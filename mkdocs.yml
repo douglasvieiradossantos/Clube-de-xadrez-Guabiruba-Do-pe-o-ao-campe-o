@@ -4,7 +4,7 @@ site_url: "https://douglasvieiradossantos.github.io/Clube-de-xadrez-Guabiruba-Do
 theme:
   name: material
   language: pt
-   logo: logo.png
+  logo: logo.png
   features:
     - navigation.sections
     - navigation.top
@@ -16,20 +16,3 @@ plugins:
 
 nav:
   - Início: index.md
-  - Trilhas: trilhas.md
-
-  - "Trilha A — Iniciante escolar":
-      - Visão geral: iniciante/index.md
-      - "M1 — Regras e checkmate": iniciante/m1-regras.md
-      - "M2 — Tática básica": iniciante/m2-tatica-1.md
-      - "M3 — Princípios de abertura": iniciante/m3-abertura-principios.md
-      - "M4 — Finais essenciais": iniciante/m4-finais-1.md
-      - "Testes e desafios": iniciante/testes.md
-
-  - "Trilha B — Já joga e quer evoluir":
-      - Visão geral: evoluir/index.md
-      - "M1 — Cálculo e lances candidatos": evoluir/m1-calculo.md
-      - "M2 — Tática intermediária": evoluir/m2-tatica-2.md
-      - "M3 — Planos no meio-jogo": evoluir/m3-planos.md
-      - "M4 — Finais práticos (torres)": evoluir/m4-finais-2.md
-      - "Testes e desafios": evoluir/testes.md
