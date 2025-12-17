@@ -1,52 +1,158 @@
 {% extends "main.html" %}
 
 {% block content %}
-<section class="hero">
+<section class="hero hero--gamer">
+  <div class="hero__bg"></div>
+
   <div class="hero__inner">
     <div class="hero__left">
-      <h1>Do peão ao campeão — com trilhas claras</h1>
-      <p>Curso estruturado, lições curtas e revisões. Tudo em português, do zero ao intermediário.</p>
-
-      <div class="hero__actions">
-        <a class="btn btn--primary" href="trilhas/">Ver trilhas</a>
-        <a class="btn btn--ghost" href="iniciante/">Começar (Iniciante)</a>
+      <div class="hero__kicker">
+        <span class="pill pill--hot">GRÁTIS</span>
+        <span class="pill">Trilhas</span>
+        <span class="pill">Desafios</span>
       </div>
 
-      <div class="hero__badges">
-        <span class="badge">Iniciante → Intermediário</span>
-        <span class="badge">Conteúdo direto</span>
-        <span class="badge">Foco escolar</span>
+      <h1>Aprenda xadrez jogando — passo a passo</h1>
+      <p class="hero__sub">
+        Trilhas curtas, lições claras e desafios. Do iniciante escolar ao aluno que quer evoluir.
+      </p>
+
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="{{ 'iniciante/m1-regras/' | url }}">Começar pela Lição 01</a>
+        <a class="btn btn--ghost" href="{{ 'trilhas/' | url }}">Ver trilhas</a>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <div class="stat__num">2</div>
+          <div class="stat__label">Trilhas</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num">8+</div>
+          <div class="stat__label">Lições</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num">∞</div>
+          <div class="stat__label">Revisão</div>
+        </div>
       </div>
     </div>
 
     <div class="hero__right">
-      <div class="course-card">
-        <div class="course-card__top">
-          <div class="pill">Trilha A</div>
-          <h3>Iniciante escolar</h3>
-          <p>Regras, tática básica, abertura e finais essenciais.</p>
+      <div class="panel">
+        <div class="panel__title">Missões de hoje</div>
+
+        <div class="mission">
+          <div class="mission__icon">♟️</div>
+          <div class="mission__text">
+            <div class="mission__name">Aquece</div>
+            <div class="mission__desc">Faça a Lição 01 e aprenda checkmate básico.</div>
+          </div>
+          <a class="mission__go" href="{{ 'iniciante/m1-regras/' | url }}">Ir →</a>
         </div>
-        <div class="course-card__bottom">
-          <a href="iniciante/m1-regras/" class="link">Começar pela Lição 01 →</a>
+
+        <div class="mission">
+          <div class="mission__icon">🧠</div>
+          <div class="mission__text">
+            <div class="mission__name">Tática</div>
+            <div class="mission__desc">Treine padrões simples (garfo, cravada, mate).</div>
+          </div>
+          <a class="mission__go" href="{{ 'iniciante/m2-tatica-1/' | url }}">Ir →</a>
+        </div>
+
+        <div class="mission">
+          <div class="mission__icon">🏁</div>
+          <div class="mission__text">
+            <div class="mission__name">Final</div>
+            <div class="mission__desc">Aprenda um final essencial para ganhar.</div>
+          </div>
+          <a class="mission__go" href="{{ 'iniciante/m4-finais-1/' | url }}">Ir →</a>
+        </div>
+
+        <div class="progress">
+          <div class="progress__top">
+            <span>Progresso (exemplo)</span>
+            <span class="muted">0/4 lições</span>
+          </div>
+          <div class="progress__bar"><span style="width: 8%"></span></div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="grid">
-  <h2>Atalhos</h2>
-  <div class="grid__cards">
-    <a class="card" href="trilhas/">
-      <h3>Trilhas</h3><p>Escolha seu nível e siga a sequência.</p>
+<section class="section">
+  <h2>Escolha seu modo</h2>
+  <p class="muted">Comece pelo iniciante escolar, ou pule para evoluir se você já joga.</p>
+
+  <div class="cards">
+    <a class="card card--glow" href="{{ 'iniciante/' | url }}">
+      <div class="card__top">
+        <span class="tag tag--green">Recomendado</span>
+        <span class="tag">Nível: Iniciante</span>
+      </div>
+      <h3>Trilha A — Iniciante escolar</h3>
+      <p>Regras, tática básica, princípios de abertura e finais essenciais.</p>
+      <div class="card__cta">Entrar na trilha →</div>
     </a>
-    <a class="card" href="iniciante/">
-      <h3>Iniciante</h3><p>Comece do zero, com base sólida.</p>
+
+    <a class="card card--glow" href="{{ 'evoluir/' | url }}">
+      <div class="card__top">
+        <span class="tag tag--purple">Desafio</span>
+        <span class="tag">Nível: Intermediário</span>
+      </div>
+      <h3>Trilha B — Já joga e quer evoluir</h3>
+      <p>Cálculo, tática intermediária, planos no meio-jogo e finais práticos.</p>
+      <div class="card__cta">Entrar na trilha →</div>
     </a>
-    <a class="card" href="evoluir/">
-      <h3>Já jogo e quero evoluir</h3><p>Planos, cálculo e finais práticos.</p>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <h2>Como funciona</h2>
+  <div class="how">
+    <div class="how__item">
+      <div class="how__icon">🧭</div>
+      <h3>1) Escolha uma trilha</h3>
+      <p>Você segue uma sequência simples. Sem se perder.</p>
+    </div>
+    <div class="how__item">
+      <div class="how__icon">🎯</div>
+      <h3>2) Faça 1 lição por dia</h3>
+      <p>Lições curtas e objetivas, ideais para escola.</p>
+    </div>
+    <div class="how__item">
+      <div class="how__icon">🏆</div>
+      <h3>3) Teste e revise</h3>
+      <p>Consolide o aprendizado com desafios e revisão.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Atalhos rápidos</h2>
+  <div class="mini">
+    <a class="mini__card" href="{{ 'trilhas/' | url }}">
+      <div class="mini__icon">🗺️</div>
+      <div>
+        <div class="mini__title">Visão geral</div>
+        <div class="muted">Veja as duas trilhas</div>
+      </div>
+    </a>
+    <a class="mini__card" href="{{ 'iniciante/testes/' | url }}">
+      <div class="mini__icon">🧩</div>
+      <div>
+        <div class="mini__title">Desafios</div>
+        <div class="muted">Teste seu nível</div>
+      </div>
+    </a>
+    <a class="mini__card" href="{{ 'sobre/' | url }}">
+      <div class="mini__icon">👋</div>
+      <div>
+        <div class="mini__title">Sobre</div>
+        <div class="muted">Como usar o site</div>
+      </div>
     </a>
   </div>
 </section>
 {% endblock %}
-
