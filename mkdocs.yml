@@ -4,6 +4,7 @@ site_url: "https://douglasvieiradossantos.github.io/Clube-de-xadrez-Guabiruba-Do
 theme:
   name: material
   language: pt
+   logo: logo.png
   features:
     - navigation.sections
     - navigation.top
