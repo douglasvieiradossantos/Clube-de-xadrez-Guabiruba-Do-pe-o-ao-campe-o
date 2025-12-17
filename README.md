@@ -1,2 +1,2 @@
-# Clube-de-xadrez-Guabiruba-Do-pe-o-ao-campe-o
-Curso de xadrez  completo do iniciante ao avançadi
+# Clube-de-xadrez-Guabiruba-Do-peão-ao-campeão
+Curso de xadrez  completo do iniciante ao avançado
