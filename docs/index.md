@@ -1,3 +1,7 @@
+---
+template: home.html
+title: Início
+---
 # Clube de xadrez Guabiruba: Do peão ao Campeão!
 
 Bem-vindo(a)! Este é um curso organizado em **duas trilhas**, para você estudar no seu ritmo.
