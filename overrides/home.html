@@ -1,1 +1,52 @@
+{% extends "main.html" %}
+
+{% block content %}
+<section class="hero">
+  <div class="hero__inner">
+    <div class="hero__left">
+      <h1>Do peão ao campeão — com trilhas claras</h1>
+      <p>Curso estruturado, lições curtas e revisões. Tudo em português, do zero ao intermediário.</p>
+
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="trilhas/">Ver trilhas</a>
+        <a class="btn btn--ghost" href="iniciante/">Começar (Iniciante)</a>
+      </div>
+
+      <div class="hero__badges">
+        <span class="badge">Iniciante → Intermediário</span>
+        <span class="badge">Conteúdo direto</span>
+        <span class="badge">Foco escolar</span>
+      </div>
+    </div>
+
+    <div class="hero__right">
+      <div class="course-card">
+        <div class="course-card__top">
+          <div class="pill">Trilha A</div>
+          <h3>Iniciante escolar</h3>
+          <p>Regras, tática básica, abertura e finais essenciais.</p>
+        </div>
+        <div class="course-card__bottom">
+          <a href="iniciante/m1-regras/" class="link">Começar pela Lição 01 →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="grid">
+  <h2>Atalhos</h2>
+  <div class="grid__cards">
+    <a class="card" href="trilhas/">
+      <h3>Trilhas</h3><p>Escolha seu nível e siga a sequência.</p>
+    </a>
+    <a class="card" href="iniciante/">
+      <h3>Iniciante</h3><p>Comece do zero, com base sólida.</p>
+    </a>
+    <a class="card" href="evoluir/">
+      <h3>Já jogo e quero evoluir</h3><p>Planos, cálculo e finais práticos.</p>
+    </a>
+  </div>
+</section>
+{% endblock %}
 
